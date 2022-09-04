@@ -1,0 +1,7 @@
+
+<div class="list-group"  *ngFor="let grp of filtredData">
+  <a *ngIf="grp.type === 'intrusion-set'" href="#" class="list-group-item list-group-item-action "
+    routerLink="/groupsInfo/:{{ grp }}" [state]="{ id: grp }">
+    {{ grp.name }}
+  </a>
+</div>

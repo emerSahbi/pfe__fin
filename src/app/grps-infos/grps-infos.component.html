@@ -1,0 +1,61 @@
+<div class="container">
+
+    <table class="table">
+
+      <tbody>
+        <tr class="table-active">
+          <th scope="row">Name</th>
+          <td>{{data.name}}</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">Aliases</th>
+          <td>{{data.aliases}}</td>
+
+        </tr>
+        <tr class="table-active">
+          <th scope="row">Motivation</th>
+          <td colspan="2">{{data.primary_motivation}}</td>
+
+        </tr>
+        <tr>
+          <th scope="row">First seen</th>
+          <td>{{data.first_seen}}</td>
+
+        </tr>
+        <tr class="table-active">
+          <th scope="row">Aliases</th>
+          <td colspan="2">{{data.primary_motivation}}</td>
+
+        </tr>
+        <tr>
+          <th scope="row">Description</th>
+          <td>{{data.description}}</td>
+
+        </tr>
+        
+    
+        <tr class="table-active">
+          <th scope="row">Country Targets</th>
+          <td *ngFor="let CountryTarget of CountryTarget">{{CountryTarget}}</td>
+
+        </tr>
+        <tr>
+          <th scope="row">Location</th>
+          <td *ngFor="let SourceTarget of SourceTarget">{{SourceTarget}}</td>
+
+        </tr>
+        <tr class="table-active">
+          <th scope="row">Tools</th>
+          <td *ngFor="let Tools of Tools">{{Tools}}</td>
+
+        </tr>
+        <tr>
+          <th scope="row">Malwares</th>
+          <td *ngFor="let Malware of Malware">{{Malware}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+
+</div>
